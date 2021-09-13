@@ -1,0 +1,1 @@
+<h1>Esta pasta guarda as resoluções (feitas por mim) dos desafios propostos no site <a href="https://www.101computing.net/category/python-beginner/">101Computing</a></h1>
