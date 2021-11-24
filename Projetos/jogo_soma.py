@@ -3,12 +3,15 @@ from random import randint
 erros = acertos = 0
 
 def inp_ut(msg, incremento):
+    global acertou
     while True:
         resp = int(input(msg))
         if resp == incremento:
             print('Parábens! Você acertou.')
+            acertou = True
         else:
             print('Infelizmente você errou.')
+            acertou = False
 
 while True:
     n1 = randint(1, 100)
@@ -25,7 +28,7 @@ while True:
     while True:
         opcao = int(input('Escolha uma opção: '))
         print(opcao)
-        if (opcao == 1 or opcao == 2 or opcao == 3 or opcao == 4):
+        if (opcao >= 1 and opcao <= 4):
             break
         else:
             print('Erro! A opção digitada é inválida, tente novamente.')
