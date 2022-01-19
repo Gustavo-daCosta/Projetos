@@ -1,4 +1,3 @@
-import json
 from tkinter import *
 from tkinter import messagebox, ttk
 from requests import get
@@ -149,7 +148,7 @@ TextoCEP.place(x=10, y=150)
 CaixaCEP =  Text(app, width=34, height=1, font=('Arial', 11))
 CaixaCEP.place(x=10, y=175)
 
-photo = PhotoImage(file='C:/Users/macie/OneDrive/Área de Trabalho/Projetos/Projetos/Projetos com uso de API e Interface Grafica/Consulta de CEP/imagens/logoCopiarEColar.png')
+photo = PhotoImage(file="C:/Users/macie/OneDrive/Área de Trabalho/Projetos/Projetos - Python/Projetos com uso de API e Interface Grafica/Consulta de CEP/imagens/logoCopiarEColar.png")
 
 CoppyButtonCEP = Button(app, text='Copiar', width=25, height=25, image=photo, bg='#969997', command=lambda: copy_button(CEP.strip()))
 CoppyButtonCEP.place(x=copyButtonX, y=170)
