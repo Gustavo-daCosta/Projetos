@@ -1,0 +1,15 @@
+'''
+Library Management System
+
+Commands:
+- Add Book Details
+- Edit Book Details
+- Delete Book
+- View Book List
+- Issue Book to Student
+- Return Book
+
+Extra buttons
+- Quit
+- About
+'''

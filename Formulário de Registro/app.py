@@ -1,19 +1,26 @@
 from os import system
 
+def Menu(msg):
+    msgLength = len(msg) + 10
+    print("="*msgLength)
+    print(msg.center(msgLength))
+    print("="*msgLength)
+
 while True:
-    print(f"{'REGISTRATION FORMULARY':^50}")
-    print('''[ 1 ] Register new account
-[ 2 ] Login in a existing account
-[ 3 ] Exit program''');
+    Menu("Formulário de Registro")
+    print('''[ 1 ] Registrar uma nova conta
+[ 2 ] Entrar em uma conta existente
+[ 3 ] Sair''')
     while True:
         try:
-            opcao = int(input('Select an option: '));
-            if 4 > opcao > 0:
-                system('cls')
+            opcao = int(input("Selecione uma opção: "))
+            if 0 < opcao < 4:
                 break
             else:
                 raise ValueError
-        except:
-            print('ERRO! Tente novamente.')
+        except (ValueError, TypeError):
+            print("ERRO! Valor inválido, tente novamente.")
+    
     if opcao == 1:
-        print('teste')
+        teste = open("teste.txt", "a")
+        print(teste)
